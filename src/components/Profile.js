@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 const Profile = ({
   avatarUrl,
   userName,
@@ -33,5 +35,10 @@ const Profile = ({
   </div>
   );
 };
+
+Profile.propTypes = {
+    avatarUrl: PropTypes.string,
+    
+}
 
 export default Profile;
