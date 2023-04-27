@@ -38,12 +38,12 @@ export const Profile = ({
 };
 
 Profile.propTypes = {
-    avatarUrl: PropTypes.string,
-    userName: PropTypes.string,
-    tagUser:PropTypes.string,
-    location:PropTypes.string,
-    views:PropTypes.number,
-    likes:PropTypes.number,
+    avatarUrl: PropTypes.string.isRequired,
+    userName: PropTypes.string.isRequired,
+    tagUser:PropTypes.string.isRequired,
+    location:PropTypes.string.isRequired,
+    views:PropTypes.number.isRequired,
+    likes:PropTypes.number.isRequired,
 }
 
 

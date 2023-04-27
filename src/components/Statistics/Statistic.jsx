@@ -1,33 +1,30 @@
 import PropTypes from 'prop-types';
 import css from 'components/Statistics/Statistic.module.css';
 
-export const Statistic = ({ title }) => {
+export const Statistic = ({ stats }) => {
   return (
     <section className="statistics">
-      <h2 className={css.title}>{title}</h2>
-
+      <h2 className={css.title}>Upload stats</h2>
       <ul className="stat-list">
-        <li className="item">
-          <span className="label">.docx</span>
-          <span className="percentage">4%</span>
-        </li>
-        <li className="item">
-          <span className="label">.mp3</span>
-          <span className="percentage">14%</span>
-        </li>
-        <li className="item">
-          <span className="label">.pdf</span>
-          <span className="percentage">41%</span>
-        </li>
-        <li className="item">
-          <span className="label">.mp4</span>
-          <span className="percentage">12%</span>
-        </li>
+        {stats.map(({ label, percentage, id }) => (
+          <li className="item" key={id}>
+            <span className="label">{label}</span>
+            <span className="percentage">{percentage}</span>
+          </li>
+        ))}
       </ul>
     </section>
   );
 };
 
 Statistic.propTypes = {
-  title: PropTypes.string,
+  title: PropTypes.string.isRequired,
+  stats: PropTypes.arrayOf(
+    PropTypes.exact({
+      id: PropTypes.string.isRequired,
+      label: PropTypes.string.isRequired,
+      percentage: PropTypes.number.isRequired,
+    })
+  ),
 };
+
