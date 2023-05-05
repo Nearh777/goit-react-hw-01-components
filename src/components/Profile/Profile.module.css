@@ -1,17 +1,28 @@
 .profile {
     font-family: 'Raleway';
     width: 480px;
-    height: 600px;    
+    margin: 0 auto;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
     
-    background-color: rgba(232, 229, 222, 0.742);
+    /* justify-content: center; */
+    background-color: hsla(195, 11%, 55%, 0.872);
 
     
 }
 
 .description {
-    width: 240px;
-    background-color: white;
-    margin: 0 36px 20px;
+    width: 330px;
+    justify-content: center;
+    background-color: rgb(248, 245, 245);
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: 40px;
+    
+    padding-top: 40px;
+    
     
 }
 
@@ -21,10 +32,10 @@
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 20px;
-    margin-top: 50px;
+    margin-top: 10px;
     max-width: 100px;
     border-radius: 100px;
-    background-color: darkgrey;
+    background-color: rgba(168, 116, 168, 0.527);
 }
 
 .name {
@@ -33,8 +44,7 @@
     font-weight: 600;
     text-align: center;
     font-style: bold;
-    margin-block-end: 20px;
-    margin-block-start: 30px;
+    margin-top: 50px;
     line-height: 1.33;
 }
 
@@ -45,14 +55,44 @@
 }
 
 .location {
+    font-size: 24px;
     text-align: center;
+    margin-bottom: 40px;
+    padding-bottom: 30px;
 }
 
 
 .stats {
+
 display: flex;
-flex-wrap: wrap;
-gap: 30px;
+width: 330px;
+margin-left: 40px;
+margin-top: 0;
+padding-bottom: 50px;
 justify-content: center;
 
+}
+
+.item {
+    width: 110px;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    border: 1px solid;
+    border-color: gray;
+    text-align: center;
+    justify-content: center;
+    
+    background-color:rgba(197, 194, 194, 0.826)
+
+}
+
+.label {
+    color: gray;
+}
+
+.quantity {
+    font-size: 18px;
+    font-weight: 700;
 }

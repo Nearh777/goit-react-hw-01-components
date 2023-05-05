@@ -1,5 +1,5 @@
 import { Profile } from 'components/Profile/Profile';
-import { Statistic } from 'components/Statistics/Statistic';
+import { Statistics } from 'components/Statistics/Statistics';
 import { FriendList } from 'components/FriendList/FriendList';
 import { TransactionHistory } from 'components/TransactionHistory/TransactionHistory';
 import user from 'user.json';
@@ -21,7 +21,7 @@ export const App = () => {
         likes={user.stats.likes}
       />
 
-      <Statistic stats={dataStats} />
+      <Statistics stats={dataStats} />
 
       <FriendList friends={friend} />
 
