@@ -3,6 +3,7 @@ import styled from '@emotion/styled';
 export const Section = styled.section`
   width: 480px;
   display: block;
+  font-family: 'Raleway';
   margin: 0 auto;
 //   background-color: hsla(195, 11%, 55%, 0.872);
   list-style: none;

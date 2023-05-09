@@ -6,6 +6,7 @@ display: flex;
     width: 480px;
     flex-direction: column;
     gap: 30px;
+    font-family: 'Raleway';
     margin: 0 auto;
     margin-top: 70px;
     list-style: none;
