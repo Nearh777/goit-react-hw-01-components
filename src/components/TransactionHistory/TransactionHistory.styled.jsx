@@ -4,6 +4,7 @@ export const Table = styled.table`
   width: 550px;
   font-family: 'Raleway';
   margin: 0 auto;
+  margin-bottom: 70px;
   border-collapse: collapse;
   box-shadow: 10px 10px 13px -5px rgba(173,130,164,0.58);
 `;
