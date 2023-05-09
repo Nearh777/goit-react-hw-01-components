@@ -9,6 +9,7 @@ display: flex;
     font-family: 'Raleway';
     margin: 0 auto;
     margin-top: 70px;
+    margin-bottom: 70px;
     list-style: none;
 `;
 
@@ -37,7 +38,8 @@ width: 20px;
 border-radius: 50%;
 background-color: ${bgStatus};
 margin-left: 20px;
-margin-top: 50px;
+margin-top: auto;
+margin-bottom: auto;
 `;
 
 export const Img = styled.img`
@@ -50,6 +52,7 @@ width: 100px;
 export const Name = styled.p`
 font-size: 36px;
 font-weight: 600;
-margin-top: 30px;
+margin-top: auto;
+margin-bottom: auto;
 margin-left: 20px;
 `;
