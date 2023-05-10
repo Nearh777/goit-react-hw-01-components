@@ -5,7 +5,7 @@ export const Section = styled.section`
   display: block;
   font-family: 'Raleway';
   margin: 0 auto;
-//   background-color: hsla(195, 11%, 55%, 0.872);
+  background-color: hsla(195, 11%, 55%, 0.872);
   list-style: none;
 `;
 

@@ -7,7 +7,8 @@ font-family: 'Raleway';
     padding: 0px;
     display: flex;
     flex-direction: column;
-    list-style: none;    
+    list-style: none;
+    margin-bottom: 50px;    
     background-color: hsla(195, 11%, 55%, 0.872);
 `;
 
